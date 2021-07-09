@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 import './App.css';
-
+//changes
 type Data = {
   id: number;
   avatar: string;
@@ -29,6 +29,7 @@ const fetchUsers = async (): Promise<Users> => {
     throw new Error('Something went wrong!');
   }
   return response.json();
+  
 };
 
 const addUser = async (user: {
